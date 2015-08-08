@@ -16,7 +16,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion,format(round(p.precioUf * 530),0) as 'CPL' "
+                 . "c.nombreComuna, p.descripcion,format(round(p.precioUf * 22500),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c ON p.idComuna = c.idComuna;";
             $query = mysql_query($sql);
             //Arroja el error
@@ -71,7 +71,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 530),0) as 'CPL' "
+                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 22500),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c on p.idComuna = c.idComuna;";
             $query = mysql_query($sql);
             //Arroja el error
@@ -119,7 +119,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 530),0) as 'CPL' "
+                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 22500),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c on p.idComuna = c.idComuna "
                  . "WHERE c.idComuna = " . $comuna . ";";
             $query = mysql_query($sql);

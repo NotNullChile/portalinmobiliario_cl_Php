@@ -189,7 +189,7 @@ if(isset($_SESSION['ejecutivo']) && isset($_SESSION['prop']))
                                     Precio en Pesos
                                 </td>
                                 <td>
-                                   <?php echo $sessionProp['precioUf']*600?>
+                                   <?php echo $sessionProp['precioUf']*22500?>
                                 </td>
                             </tr>
                             <tr>

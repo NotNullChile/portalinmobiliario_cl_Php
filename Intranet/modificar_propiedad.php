@@ -222,7 +222,7 @@ if(isset($_SESSION['ejecutivo']) && isset($_SESSION['prop']))
                                             </td>
                                             <td>
                                                 <input type="text" class="form-control " 
-                                                       placeholder=" <?php echo $arrayProp['precioUF']*600?> (El precio en pesos se actualizará automáticamente al guardar)" 
+                                                       placeholder=" <?php echo $arrayProp['precioUF']*22500?> (El precio en pesos se actualizará automáticamente al guardar)" 
                                                        readonly>
                                             </td>
                                         </tr>
