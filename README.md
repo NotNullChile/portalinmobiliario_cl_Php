@@ -4,7 +4,7 @@
 
 Demo website that emulates a real estate website.  
 Uses:
-  * Java Web (Servlets and JSP).
+  * PHP.
   * Model View Controller architectural pattern.
   * mySQL Database.
   * Bootstrap, CSS and Javascript.
@@ -13,7 +13,7 @@ Uses:
   
 Website de demostración que emula un portal inmobiliario.  
 Usa:
-  * Java Web (Servlets y JSP).
+  * PHP.
   * Modelo de arquitectura de software MVC.
   * Base de datos mySQL.
   * Bootstrap, CSS y Javascript.
