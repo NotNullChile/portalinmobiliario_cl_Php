@@ -64,25 +64,25 @@
                 <div>
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="propiedades.php">
+                            <a href="../propiedades.php">
                                 <i class="fa fa-building"></i>
                                 &nbsp; Propiedades
                             </a>
                         </li>
                         <li>
-                            <a href="contacto.php">
+                            <a href="../contacto.php">
                                 <i class="fa fa-comments"></i>
                                 &nbsp; Contacto
                             </a>
                         </li> 
                         <li class="active">
-                            <a href="ingreso_intranet.php">
+                            <a href="../ingreso_intranet.php">
                                 <i class="fa fa-lock"></i>
                                 &nbsp; Intranet
                             </a>
                         </li> 
                         <li>
-                            <a href="about.php">
+                            <a href="../about.php">
                                 <i class="fa fa-code"></i>
                                     &nbsp; by not-null.cl
                             </a>
@@ -152,7 +152,7 @@
                                 <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.notnull.cl" property="cc:attributionName" rel="cc:attributionURL">
                                 notNull Chile</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> Licencia Creative
                                     Commons Atribución-NoComercial-SinDerivar 4.0 Internacional</a>.<br /> Basada en una obra en 
-                                <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NotNullChile/portalinmobiliario_cl" rel="dct:source">
+                                <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/NotNullChile/portalinmobiliario_cl_Php" rel="dct:source">
                                 https://github.com/NotNullChile/portalinmobiliario_cl</a>.
                             </small>
                         </h6>

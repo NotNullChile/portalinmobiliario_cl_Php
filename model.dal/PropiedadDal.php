@@ -16,7 +16,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion "
+                 . "c.nombreComuna, p.descripcion,format(round(p.precioUf * 530),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c ON p.idComuna = c.idComuna;";
             $query = mysql_query($sql);
             //Arroja el error
@@ -36,7 +36,7 @@ class PropiedadDal
                 $tProp           = $row['tipoPropiedad'];
                 $nombreC         = $row['nombreComuna'];
                 $desc            = $row['descripcion'];
-
+                $cpl             = $row['CPL'];
                 echo('<tr class=row>');
                     echo ('<td><img src=images/' . $foto . ' class="img-thumbnail"></td>');
                     if ($tProp == ("casa")) 
@@ -49,7 +49,7 @@ class PropiedadDal
                     }            
                     echo('<br> <td>' . $nombreC . '</td>' );              
                     echo('<td><i class="fa fa-usd"></i>&nbsp;UF: ' . $precioUF );
-                    echo('<br><br><i class="fa fa-money"></i>&nbsp;Pesos: ' . $precioUF . '</td>'); 
+                    echo('<br><br><i class="fa fa-money"></i>&nbsp;Pesos: ' . $cpl . '</td>'); 
                     echo('<td><i class="fa fa-square-o"></i>&nbsp;Metros totales: <br>' . $mtsTotal . " " );
                     echo('<br><br><i class="fa fa-th"></i>&nbsp;Metros construidos: <br>' . $mtsCons . '</td>');
                     echo('<td><i class="fa fa-bed"></i>&nbsp;Dormitorios: ' . $numDorm);
@@ -71,7 +71,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion "
+                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 530),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c on p.idComuna = c.idComuna;";
             $query = mysql_query($sql);
             //Arroja el error
@@ -91,11 +91,12 @@ class PropiedadDal
                 $tProp           = $row['tipoPropiedad'];
                 $nombreC         = $row['nombreComuna'];
                 $desc            = $row['descripcion'];
+                $cpl             = $row['CPL'];
                 echo('<tr>');
                         echo('<td><img src=images/' . $foto . ' class="img-thumbnail"></td>');
                         echo('<td>' . $tProp .'</td>');
                         echo('<td>'. $precioUF .'</td>');
-                        echo('<td>'. $precioUF .'</td>');
+                        echo('<td>'. $cpl .'</td>');
                         echo('<td>'. $nombreC .'</td>');
                         echo('<td>'. $mtsTotal .'</td>');
                         echo('<td>'. $mtsCons .'</td>');
@@ -118,7 +119,7 @@ class PropiedadDal
         {
             $sql = "SELECT p.idPropiedad, p.foto, p.precioUf, p.mtsConstruido, "
                  . "p.mtsTotal, p.numeroCormitorios, p.numeroBaños, p.tipoPropiedad, "
-                 . "c.nombreComuna, p.descripcion "
+                 . "c.nombreComuna, p.descripcion, format(round(p.precioUf * 530),0) as 'CPL' "
                  . "FROM propiedad p INNER JOIN comuna c on p.idComuna = c.idComuna "
                  . "WHERE c.idComuna = " . $comuna . ";";
             $query = mysql_query($sql);
@@ -139,11 +140,12 @@ class PropiedadDal
                 $tProp           = $row['tipoPropiedad'];
                 $nombreC         = $row['nombreComuna'];
                 $desc            = $row['descripcion'];
+                $cpl             = $row['CPL'];
                 echo('<tr>');
                         echo('<td><img src=images/' . $foto . ' class="img-thumbnail"></td>');
                         echo('<td>' . $tProp .'</td>');
                         echo('<td>'. $precioUF .'</td>');
-                        echo('<td>'. $precioUF .'</td>');
+                        echo('<td>'. $cpl .'</td>');
                         echo('<td>'. $nombreC .'</td>');
                         echo('<td>'. $mtsTotal .'</td>');
                         echo('<td>'. $mtsCons .'</td>');
